@@ -26,3 +26,23 @@ variable "account_replication_type" {
   description = "Replication Type"
   default     = "LRS"
 }
+
+variable "vnet_name" {
+  type        = string
+  description = "Name of the Virtual Network"
+}
+
+variable "address_space" {
+  type        = list(string)
+  description = "Address space for VNet"
+}
+
+variable "subnet_name" {
+  type        = string
+  description = "Subnet name"
+}
+
+variable "subnet_prefix" {
+  type        = string
+  description = "Subnet address prefix"
+}

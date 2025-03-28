@@ -11,3 +11,11 @@ output "storage_account_id" {
 output "storage_account_name" {
   value = module.storage.storage_account_name
 }
+
+output "vnet_name" {
+  value = module.vnet.vnet_name
+}
+
+output "subnet_id" {
+  value = module.vnet.subnet_id
+}

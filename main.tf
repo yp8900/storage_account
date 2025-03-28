@@ -14,3 +14,13 @@ module "storage" {
   account_replication_type = var.account_replication_type
   tags                   = var.tags
 }
+
+module "vnet" {
+  source           = "./modules/vnet"
+  vnet_name        = var.vnet_name
+  address_space    = var.address_space
+  subnet_name      = var.subnet_name
+  subnet_prefix    = var.subnet_prefix
+  location         = local.location
+  resource_group_name = module.rg.resource_group_name
+}
