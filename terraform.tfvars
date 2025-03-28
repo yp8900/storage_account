@@ -3,3 +3,6 @@ tags = {
   Environment = "Dev"
   Owner       = "YourName"
 }
+
+
+storage_account_name = "storagetfcloud123"
