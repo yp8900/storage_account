@@ -21,3 +21,8 @@ variable "location" {
 variable "resource_group_name" {
   type = string
 }
+
+variable "nsg_name" {
+  type        = string
+  description = "Network Security Group name"
+}

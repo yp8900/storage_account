@@ -24,3 +24,12 @@ module "vnet" {
   location         = local.location
   resource_group_name = module.rg.resource_group_name
 }
+
+module "nsg" {
+  source              = "./modules/nsg"
+  nsg_name            = var.nsg_name
+  location            = local.location
+  resource_group_name = module.rg.resource_group_name
+  subnet_id           = module.vnet.subnet_id
+}
+

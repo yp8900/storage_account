@@ -10,3 +10,7 @@ output "resource_group_name" {
 output "resource_group_location" {
   value = azurerm_resource_group.this.location
 }
+
+output "nsg_id" {
+  value = module.nsg.nsg_id
+}
