@@ -1,7 +1,4 @@
 locals {
-  location = "East US"
-}
-
-locals {
+  location    = "East US"
   environment = "Dev"
 }
