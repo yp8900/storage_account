@@ -52,10 +52,7 @@ variable "nsg_name" {
   type        = string
 }
 
-variable "location" {
-  description = "Name of the location"
-  type        = string
-}
+
 variable "vm_name" {
   description = "Name of the VM"
   type        = string
@@ -70,10 +67,5 @@ variable "admin_username" {
 }
 variable "admin_password" {
   description = "password"
-  type        = string
-}
-
-variable "environment" {
-  description = "env  VM"
   type        = string
 }
