@@ -4,7 +4,7 @@ storage_account_name    = "storagetfcloud123"
 
 tags = {
   Environment = "Dev"
-  Owner       = "YourName"
+  Owner       = "Ankur"
 }
 
 vnet_name          = "vnet-demo-tfcloud"
