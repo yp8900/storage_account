@@ -5,4 +5,4 @@ variable "vm_size" {}
 variable "admin_username" {}
 variable "admin_password" {}
 variable "tags" {}
- 
+variable "subnet_id" {} 

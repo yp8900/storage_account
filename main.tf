@@ -42,4 +42,5 @@ module "vm" {
   admin_username      = var.admin_username
   admin_password      = var.admin_password
   tags                = var.tags
+  subnet_id           = module.vnet.subnet_id
 }

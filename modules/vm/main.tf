@@ -5,9 +5,11 @@ resource "azurerm_network_interface" "nic" {
 
   ip_configuration {
     name                          = "internal"
-    subnet_id                     = "<Your_Subnet_ID>" # For simplicity, hardcoded or pass as variable
+    subnet_id                     = "var.subnet_id" # For simplicity, hardcoded or pass as variable
     private_ip_address_allocation = "Dynamic"
   }
+
+   tags = var.tags
 }
 
 resource "azurerm_windows_virtual_machine" "vm" {
