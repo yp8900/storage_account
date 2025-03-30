@@ -30,7 +30,6 @@ module "nsg" {
   nsg_name            = var.nsg_name
   location            = local.location
   resource_group_name = module.rg.resource_group_name
-  subnet_id           = module.vnet.subnet_id
 }
 
 module "vm" {
@@ -43,4 +42,6 @@ module "vm" {
   admin_password      = var.admin_password
   tags                = var.tags
   subnet_id           = module.vnet.subnet_id
+  nsg_id              = module.nsg.nsg_id  # Passing NSG ID to VM module
 }
+

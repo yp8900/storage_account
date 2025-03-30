@@ -6,3 +6,4 @@ variable "admin_username" {}
 variable "admin_password" {}
 variable "tags" {}
 variable "subnet_id" {} 
+variable "nsg_id" {}
